@@ -93,7 +93,10 @@
         /* display */
         border: none;
         box-shadow: var(--raise-0);
-        display: inline-block;
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        gap: 7px;
         transition: background-color 0.2s, transform 0.2s, filter 0.2s, opacity 0.2s, box-shadow 0.2s, top 0.2s;
         /* centre for mobile */
         text-align: center;

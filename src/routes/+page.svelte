@@ -4,6 +4,8 @@
 	import Badge from '../components/Badge.svelte';
 	import File from '../components/File.svelte';
     import FileList from '../components/FileList.svelte';
+
+    import { DownloadIcon, HeartIcon, MoreHorizontalIcon } from 'lucide-svelte';
 </script>
 
 <center>
@@ -54,6 +56,13 @@
                 <Button as="a" shine colour="primary">Button</Button>
                 <Button as="a" shine colour="danger">Button</Button>
                 <Button as="a" shine colour="outline">Button</Button>
+            </div>
+
+            <h5>Icon Buttons</h5>
+            <div class="small-grid">
+                <Button as="a" size="medium" colour="primary"><DownloadIcon />Download</Button>
+                <Button as="a" size="medium"><HeartIcon />Follow</Button>
+                <Button as="a" size="medium"><MoreHorizontalIcon /></Button>
             </div>
         </span>
     </span>
