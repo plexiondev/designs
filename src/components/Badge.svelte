@@ -1,4 +1,6 @@
 <script lang="ts">
+    import loader_match from '$generated/loaders.json';
+
     export let label = '';
     export let colour = 'default';
     export let style: 'badge' | 'tag' | 'tag-mono' | 'loader' = 'badge';
@@ -13,8 +15,7 @@
 
     </span>
     <span class="info">
-        <!-- TODO: capitalise -->
-        {loader}
+        {loader_match[loader].name}
     </span>
 </div>
 {:else}

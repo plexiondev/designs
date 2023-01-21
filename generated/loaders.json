@@ -1,0 +1,17 @@
+{
+    "datapack": {
+        "name": "Data Pack"
+    },
+    "minecraft": {
+        "name": "Minecraft"
+    },
+    "fabric": {
+        "name": "Fabric"
+    },
+    "forge": {
+        "name": "Forge"
+    },
+    "quilt": {
+        "name": "Quit"
+    }
+}
