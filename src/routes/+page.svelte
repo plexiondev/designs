@@ -126,6 +126,15 @@
                 <Badge style="tag" label="Badge" colour="blue"></Badge>
             </div>
 
+            <h5>Tag-Mono</h5>
+            <div class="small-grid">
+                <Badge style="tag-mono" label="Badge"></Badge>
+                <Badge style="tag-mono" label="Badge" colour="red"></Badge>
+                <Badge style="tag-mono" label="Badge" colour="orange"></Badge>
+                <Badge style="tag-mono" label="Badge" colour="green"></Badge>
+                <Badge style="tag-mono" label="Badge" colour="blue"></Badge>
+            </div>
+
             <h5>Loader</h5>
             <div class="small-grid">
                 <Badge style="loader" loader="datapack"></Badge>

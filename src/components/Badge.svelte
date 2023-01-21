@@ -1,7 +1,7 @@
 <script lang="ts">
     export let label = '';
     export let colour = 'default';
-    export let style: 'badge' | 'tag' | 'loader' = 'badge';
+    export let style: 'badge' | 'tag' | 'tag-mono' | 'loader' = 'badge';
 
     // loader only
     export let loader: string = '';
@@ -39,25 +39,30 @@
         margin-right: 7px;
     }
 
-    .badge.red    { color: var(--red);    }
-    .badge.orange { color: var(--orange); }
-    .badge.green  { color: var(--green);  }
-    .badge.blue   { color: var(--blue);   }
+    :is(.badge, .tag-mono).red    { color: var(--red);    }
+    :is(.badge, .tag-mono).orange { color: var(--orange); }
+    :is(.badge, .tag-mono).green  { color: var(--green);  }
+    :is(.badge, .tag-mono).blue   { color: var(--blue);   }
 
-    .tag {
+    .tag, .tag-mono {
         background-color: var(--text-main);
         color: rgba(0,0,0,90%);
         padding: 0 12px;
         line-height: 19px;
         border-radius: 50px;
         font-size: 14px;
-        font-weight: 700;
+        font-weight: 600;
     }
 
     .tag.red    { background-color: var(--red);    }
     .tag.orange { background-color: var(--orange); }
     .tag.green  { background-color: var(--green);  }
     .tag.blue   { background-color: var(--blue);   }
+
+    .tag-mono {
+        background-color: rgba(0,0,0,90%);
+        color: var(--text-main);
+    }
 
     .loader {
         display: flex;
