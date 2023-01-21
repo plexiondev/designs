@@ -2,6 +2,8 @@
     import { classCombine } from '../utils/classCombine';
     import Button from './Button.svelte';
 
+    import { FileIcon } from 'lucide-svelte';
+
     export let filename = '';
     export let indicator = '';
 
@@ -19,7 +21,9 @@
 </script>
 
 <div class={className}>
-    <span class="icon"></span>
+    <span class="icon">
+        <FileIcon size={20} strokeWidth={2.3} />
+    </span>
     <span class="info">
         <strong>{filename}</strong>
         <i class="indicator">{indicator}</i>
@@ -51,9 +55,6 @@
         display: flex;
         flex-direction: column;
         justify-content: center;
-    }
-    .file .icon svg {
-        top: 0 !important;
     }
 
     /* info */
