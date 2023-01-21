@@ -171,4 +171,99 @@
 		scrollbar-width: thin;
 		scrollbar-color: var(--scroll);
 	}
+
+	/* headers */
+	h1, h2, h3, h4, h5, h6 {
+		color: var(--text-head);
+		font-weight: 600;
+	}
+	h1, h2, h3 {
+		font-family: var(--font-head);
+		font-weight: 600;
+	}
+	/* h1, attention-drawing */
+	h1, .act-h1 {
+		font-size: 48px;
+		padding: 8px 0;
+		line-height: 60px;
+		--brand: -4px;
+		--brand2: 4px;
+	}
+	/* h2, less-important */
+	h2, .act-h2, .md-body h1 {
+		--fixed: 22px !important;
+		font-size: 36px;
+		padding: 6px 0;
+	}
+	/* h3, smaller */
+	h3, .act-h3, .md-body h2 {
+		font-size: 26px;
+		padding: 3px 0;
+	}
+	/* h4, slightly bigger than usual */
+	h4, .act-h4, .md-body h3, .md-body h5 {
+		font-size: 18px;
+		line-height: 22px;
+	}
+	/* h5, aka. bold text */
+	h5, .act-h5, .md-body :is(h4, h5) {
+		font-size: 16px;
+	}
+
+	/* link anchors */
+	a {
+		color: var(--l3);
+		text-decoration: underline;
+		text-underline-offset: var(--underline-offset);
+		transition: color 0.2s, transform 0.2s;
+	}
+	a:is(:hover, :focus) {
+		color: var(--text-head);
+	}
+	a[role="button"], [onclick] {
+		cursor: pointer;
+	}
+	a.hide:not(:is(:hover, :focus)) {
+		text-decoration: none;
+	}
+
+	a.hidden:not(.show-underline) {
+		text-decoration: none;
+	}
+	a.hidden:not(:is(:hover,:focus)) {
+		color: inherit;
+	}
+
+	/* italics */
+	em, i.i, .md-body i {
+		font-style: italic;
+	}
+	/* bold/strong */
+	strong, b {
+		font-weight: 600;
+		color: var(--text-head);
+	}
+
+	/* code blocks */
+	code, kbd, pre, samp {
+		font-family: var(--font-code);
+		background-color: var(--b5);
+		padding: 1px 4px;
+		border-radius: 3px;
+		white-space: nowrap;
+		image-rendering: auto;
+	}
+	pre {
+		padding: 4px;
+		margin: 5px 0;
+	}
+	pre, pre code {
+		white-space: pre;
+	}
+	code {
+		font-size: 14px;
+	}
+	.code-font {
+		font-family: var(--font-code);
+	}
 </style>

@@ -5,15 +5,15 @@
 </script>
 
 <center>
-    <h1>designs</h1>
+    <h2>designs</h2>
 </center>
 
 <div class="big-grid">
     <span>
         <span>
-            <h3>Buttons</h3>
+            <h4>Buttons</h4>
 
-            <h4>Default</h4>
+            <h5>Default</h5>
             <div class="small-grid">
                 <Button as="a" href="https://plexion.dev" size="small">Button</Button>
                 <Button as="a" size="medium">Button</Button>
@@ -21,7 +21,7 @@
                 <Button as="a" size="hero">Button</Button>
             </div>
 
-            <h4>Primary</h4>
+            <h5>Primary</h5>
             <div class="small-grid">
                 <Button as="a" size="small" colour="primary">Button</Button>
                 <Button as="a" size="medium" colour="primary">Button</Button>
@@ -29,7 +29,7 @@
                 <Button as="a" size="hero" colour="primary">Button</Button>
             </div>
 
-            <h4>Danger</h4>
+            <h5>Danger</h5>
             <div class="small-grid">
                 <Button as="a" size="small" colour="danger">Button</Button>
                 <Button as="a" size="medium" colour="danger">Button</Button>
@@ -37,7 +37,7 @@
                 <Button as="a" size="hero" colour="danger">Button</Button>
             </div>
 
-            <h4>Outline</h4>
+            <h5>Outline</h5>
             <div class="small-grid">
                 <Button as="a" size="small" colour="outline">Button</Button>
                 <Button as="a" size="medium" colour="outline">Button</Button>
@@ -48,9 +48,9 @@
     </span>
     <span>
         <span>
-            <h3>Avatar</h3>
+            <h4>Avatar</h4>
 
-            <h4>Default</h4>
+            <h5>Default</h5>
             <div class="small-grid">
                 <Avatar size="large" src="https://avatars.githubusercontent.com/u/46572320?v=4" />
                 <Avatar size="medium" src="https://avatars.githubusercontent.com/u/46572320?v=4" />
@@ -58,7 +58,7 @@
                 <Avatar size="extra-small" src="https://avatars.githubusercontent.com/u/46572320?v=4" />
             </div>
 
-            <h4>Circular</h4>
+            <h5>Circular</h5>
             <div class="small-grid">
                 <Avatar size="large" circle src="https://avatars.githubusercontent.com/u/46572320?v=4" />
                 <Avatar size="medium" circle src="https://avatars.githubusercontent.com/u/46572320?v=4" />
@@ -69,7 +69,7 @@
     </span>
     <span>
         <span>
-            <h3>Badge</h3>
+            <h4>Badge</h4>
 
             <div class="small-grid">
                 <Badge label="Badge"></Badge>
