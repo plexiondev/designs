@@ -77,6 +77,7 @@
     .avatar.long {
         width: initial;
         aspect-ratio: 7 / 10; /* ref. 133x190 */
+        object-fit: cover;
     }
 
     /* circular */
