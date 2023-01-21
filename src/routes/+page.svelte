@@ -141,6 +141,7 @@
                 <Badge label="Badge" colour="green"></Badge>
                 <Badge label="Badge" colour="blue"></Badge>
                 <Badge label="Badge" colour="magenta"></Badge>
+                <Badge label="Badge" colour="pink"></Badge>
             </div>
 
             <h5>Tag</h5>
@@ -151,6 +152,7 @@
                 <Badge style="tag" label="Badge" colour="green"></Badge>
                 <Badge style="tag" label="Badge" colour="blue"></Badge>
                 <Badge style="tag" label="Badge" colour="magenta"></Badge>
+                <Badge style="tag" label="Badge" colour="pink"></Badge>
             </div>
 
             <h5>Tag-Mono</h5>
@@ -161,6 +163,7 @@
                 <Badge style="tag-mono" label="Badge" colour="green"></Badge>
                 <Badge style="tag-mono" label="Badge" colour="blue"></Badge>
                 <Badge style="tag-mono" label="Badge" colour="magenta"></Badge>
+                <Badge style="tag-mono" label="Badge" colour="pink"></Badge>
             </div>
 
             <h5>Loader</h5>
