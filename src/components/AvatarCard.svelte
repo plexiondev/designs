@@ -63,19 +63,20 @@
         background-color: var(--b4);
         border-radius: 13px;
         text-decoration: none;
+        --gap: 20px;
     }
 
     .avatar-card .top {
         display: flex;
         align-items: center;
-        gap: 16px;
+        gap: var(--gap);
         padding: 8px;
         border-radius: 13px;
         background-color: var(--b3);
     }
     .avatar-card .bottom {
         display: flex;
-        gap: 16px;
+        gap: var(--gap);
         padding: 8px;
         font-size: 14px;
     }
