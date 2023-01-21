@@ -127,6 +127,39 @@
             status="offline"
             roles={['member','supporter']}
             />
+
+            <h5>List</h5>
+            <AvatarCard
+            size="list"
+            avatar="https://avatars.githubusercontent.com/u/46572320?v=4"
+            name="plexion"
+            href="https://github.com/plexiondev"
+            roles={['member','dev','cool']}
+            />
+            <AvatarCard
+            size="list"
+            avatar="https://a.ppy.sh/15364179?1674304618.jpeg"
+            name="plexion"
+            href="https://osu.ppy.sh/u/plexion"
+            status="away"
+            roles={['member','supporter']}
+            />
+            <AvatarCard
+            size="list"
+            avatar="https://a.ppy.sh/1040328?1658716691.png"
+            name="smoogipoo"
+            href="https://osu.ppy.sh/u/smoogipoo"
+            status="dnd"
+            roles={['member']}
+            />
+            <AvatarCard
+            size="list"
+            avatar="https://a.ppy.sh/3103765?1570514091.jpeg"
+            name="flyte"
+            href="https://osu.ppy.sh/u/flyte"
+            status="offline"
+            roles={['member','supporter']}
+            />
         </span>
     </span>
     <span>

@@ -45,7 +45,11 @@
 <a class={className} {href} on:click={dispatchClick}>
     <span class="top">
         <span class="icon">
+            {#if size == 'list'}
+            <Avatar size="extra-small" src="{avatar}" shadow={false} />
+            {:else}
             <Avatar size="kinda-small" src="{avatar}" shadow={false} />
+            {/if}
         </span>
         <span class="info">
             <span class="base">
@@ -88,6 +92,8 @@
     }
     .avatar-card .bottom {
         display: flex;
+        align-items: center;
+        line-height: 14px;
         gap: var(--gap);
         padding: 8px;
         font-size: 14px;
@@ -108,8 +114,23 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        margin: -8px -8px -10px;
+        margin: -8px;
         border-radius: 13px;
+    }
+    .avatar-card:not(.list) .icon {
         width: 64px;
+    }
+
+    /* list */
+    .avatar-card.list, .avatar-card.list .base {
+        flex-direction: row;
+    }
+    .avatar-card.list .top {
+        background-color: transparent;
+        flex: 1;
+    }
+    .avatar-card.list .bottom .icon {
+        order: 1;
+        margin-right: 8px;
     }
 </style>

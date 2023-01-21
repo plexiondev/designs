@@ -7,7 +7,7 @@
 </script>
 
 <div class="role-list">
-    {#each roles as role}
+{#each roles as role}
     <Badge
     style="tag-mono"
     colour={role_match[role].colour}
