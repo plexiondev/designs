@@ -7,6 +7,7 @@
 
 <center>
     <h2>designs</h2>
+    <p><strong>ComponentName</strong> -> <strong>Style</strong></p>
 </center>
 
 <div class="big-grid">
@@ -123,13 +124,17 @@
 </div>
 
 <style>
+    center {
+        margin: 20px 0 10px;
+    }
+
     .big-grid {
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
         padding: 0 20px;
         gap: 20px 0;
     }
-    .big-grid > span {
+    .big-grid span {
         display: flex;
         flex-direction: column;
         gap: 20px;
