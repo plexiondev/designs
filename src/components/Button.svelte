@@ -127,8 +127,8 @@
 
     /* colours */
     .button.primary {
-        --border: var(--accent-raise);
-        background-color: var(--accent-raise);
+        --border: var(--l4);
+        background-color: var(--l4);
         color: var(--text-raised);
     }
     .button.primary:is(:hover, :focus-visible) {
@@ -153,12 +153,12 @@
 
     /* shine */
     .button:not(.outline).shine {
-        box-shadow: 0px 0px 16px 1px var(--b2) !important;
+        box-shadow: 0px 0px 20px 3px var(--b2) !important;
     }
     .button.primary.shine {
-        box-shadow: 0px 0px 16px 1px var(--l4) !important;
+        box-shadow: 0px 0px 20px 3px var(--l4) !important;
     }
     .button.danger.shine {
-        box-shadow: 0px 0px 16px 1px var(--dangerous-raise) !important;
+        box-shadow: 0px 0px 20px 3px var(--dangerous-raise) !important;
     }
 </style>
