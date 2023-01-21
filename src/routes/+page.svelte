@@ -101,6 +101,7 @@
 
             <h5>Default</h5>
             <AvatarCard avatar="https://avatars.githubusercontent.com/u/46572320?v=4" name="plexion" href="https://github.com/plexiondev" />
+            <AvatarCard avatar="https://avatars.githubusercontent.com/u/46572320?v=4" name="plexion" href="https://github.com/plexiondev" status="offline" />
         </span>
     </span>
     <span>

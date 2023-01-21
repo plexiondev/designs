@@ -12,7 +12,10 @@
     <span class="icon">
 
     </span>
-    <span class="info">{loader}</span>
+    <span class="info">
+        <!-- TODO: capitalise -->
+        {loader}
+    </span>
 </div>
 {:else}
 <div class="{style} {colour}">

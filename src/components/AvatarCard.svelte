@@ -50,7 +50,8 @@
             <StatusDot status={status} />
         </span>
         <span class="info">
-            <strong>Online</strong>
+            <!-- TODO: capitalise -->
+            <strong>{status}</strong>
         </span>
     </span>
 </a>
