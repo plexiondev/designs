@@ -5,6 +5,7 @@
     import Avatar from './Avatar.svelte';
 	import Badge from './Badge.svelte';
 	import StatusDot from './StatusDot.svelte';
+    import RoleList from './RoleList.svelte';
     import type { Role } from './types';
 
     export let roles: Role[] = [];
@@ -51,13 +52,7 @@
                     <strong>{name}</strong>
                 </span>
                 <span class="inner">
-                    {#each roles as role}
-                    <Badge
-                    style="tag-mono"
-                    colour="red"
-                    label={role.id}
-                    />
-                    {/each}
+                    <RoleList roles={roles} />
                 </span>
             </span>
         </span>
