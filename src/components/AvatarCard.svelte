@@ -3,6 +3,7 @@
     import { classCombine } from '../utils/classCombine';
 
     import Avatar from './Avatar.svelte';
+	import StatusDot from './StatusDot.svelte';
 
     // element
     export let href = '';
@@ -18,6 +19,7 @@
 
     // bottom row
     export let extra_info = false;
+    export let status: 'online' | 'away' | 'dnd' | 'offline' = 'online';
 
     // combine classes
     let className: string;
@@ -45,7 +47,7 @@
     </span>
     <span class="bottom">
         <span class="icon">
-
+            <StatusDot status={status} />
         </span>
         <span class="info">
             <strong>Online</strong>
@@ -78,6 +80,9 @@
 
     /* avatar */
     .avatar-card .icon {
+        display: flex;
+        justify-content: center;
+        align-items: center;
         margin: -8px -8px -10px;
         border-radius: 13px;
         width: 64px;

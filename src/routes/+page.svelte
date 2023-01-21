@@ -194,6 +194,7 @@
         grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
         padding: 0 20px;
         gap: 20px 0;
+        margin-bottom: 200px;
     }
     .big-grid span {
         display: flex;
