@@ -30,7 +30,7 @@
     .badge.blue   { color: var(--blue);   }
 
     .tag {
-        background-color: var(--b1);
+        background-color: var(--text-main);
         color: rgba(0,0,0,90%);
         padding: 0 12px;
         line-height: 20px;
