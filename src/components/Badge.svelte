@@ -20,7 +20,7 @@
         width: 7px;
         height: 7px;
         border-radius: 50px;
-        margin-right: 5px;
+        margin-right: 7px;
     }
 
     .badge.red    { color: var(--red);    }
