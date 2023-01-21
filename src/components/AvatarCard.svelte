@@ -49,7 +49,7 @@
                 </span>
                 <span class="inner">
                     <!-- TODO: pass these through like the files list -->
-                    <Badge style="tag-mono" colour="red" label="Dev" />
+                    <Badge style="tag-mono" colour="magenta" label="Dev" />
                 </span>
             </span>
         </span>

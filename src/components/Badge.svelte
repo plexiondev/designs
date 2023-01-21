@@ -39,10 +39,11 @@
         margin-right: 7px;
     }
 
-    :is(.badge, .tag-mono).red    { color: var(--red);    }
-    :is(.badge, .tag-mono).orange { color: var(--orange); }
-    :is(.badge, .tag-mono).green  { color: var(--green);  }
-    :is(.badge, .tag-mono).blue   { color: var(--blue);   }
+    :is(.badge, .tag-mono).red     { color: var(--red);     }
+    :is(.badge, .tag-mono).orange  { color: var(--orange);  }
+    :is(.badge, .tag-mono).green   { color: var(--green);   }
+    :is(.badge, .tag-mono).blue    { color: var(--blue);    }
+    :is(.badge, .tag-mono).magenta { color: var(--magenta); }
 
     .tag, .tag-mono {
         background-color: var(--text-main);
@@ -54,10 +55,11 @@
         font-weight: 600;
     }
 
-    .tag.red    { background-color: var(--red);    }
-    .tag.orange { background-color: var(--orange); }
-    .tag.green  { background-color: var(--green);  }
-    .tag.blue   { background-color: var(--blue);   }
+    .tag.red     { background-color: var(--red);     }
+    .tag.orange  { background-color: var(--orange);  }
+    .tag.green   { background-color: var(--green);   }
+    .tag.blue    { background-color: var(--blue);    }
+    .tag.magenta { background-color: var(--magenta); }
 
     .tag-mono {
         background-color: rgba(0,0,0,90%);
