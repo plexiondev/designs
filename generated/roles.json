@@ -1,4 +1,12 @@
 {
+    "member": {
+        "name": "Member",
+        "colour": "default"
+    },
+    "user": {
+        "name": "User",
+        "colour": "default"
+    },
     "dev": {
         "name": "Developer",
         "colour": "magenta"

@@ -16,5 +16,5 @@
     .status-dot.online  { color: var(--green);     }
     .status-dot.away    { color: var(--orange);    }
     .status-dot.dnd     { color: var(--red);       }
-    .status-dot.offline { color: var(--text-main); }
+    .status-dot.offline { color: var(--text-alt); }
 </style>

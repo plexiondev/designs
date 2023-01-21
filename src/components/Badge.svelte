@@ -64,7 +64,7 @@
 
     .tag-mono {
         background-color: rgba(0,0,0,90%);
-        color: var(--c1);
+        color: var(--text-main);
     }
 
     .loader {

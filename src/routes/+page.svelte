@@ -111,7 +111,7 @@
             name="plexion"
             href="https://github.com/plexiondev"
             status="offline"
-            roles={['cool']}
+            roles={['member']}
             />
         </span>
     </span>
