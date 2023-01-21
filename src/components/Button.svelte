@@ -18,6 +18,9 @@
     // raised
     export let raised = false;
 
+    // shine
+    export let shine = false;
+
     // disabled
     export let disabled = false;
 
@@ -30,6 +33,7 @@
         'button',
         size,
         colour,
+        shine && 'shine',
         raised && 'raised'
     ])
 
@@ -145,5 +149,16 @@
     }
     .button.outline:is(:hover, :focus) {
         --border-col: var(--text-main);
+    }
+
+    /* shine */
+    .button:not(.outline).shine {
+        box-shadow: 0px 0px 16px 1px var(--b2) !important;
+    }
+    .button.primary.shine {
+        box-shadow: 0px 0px 16px 1px var(--l4) !important;
+    }
+    .button.danger.shine {
+        box-shadow: 0px 0px 16px 1px var(--dangerous-raise) !important;
     }
 </style>

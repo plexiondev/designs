@@ -45,6 +45,14 @@
                 <Button as="a" size="large" colour="outline">Button</Button>
                 <Button as="a" size="hero" colour="outline">Button</Button>
             </div>
+
+            <h5>Shine</h5>
+            <div class="small-grid">
+                <Button as="a" shine>Button</Button>
+                <Button as="a" shine colour="primary">Button</Button>
+                <Button as="a" shine colour="danger">Button</Button>
+                <Button as="a" shine colour="outline">Button</Button>
+            </div>
         </span>
     </span>
     <span>
