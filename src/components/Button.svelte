@@ -35,7 +35,7 @@
         colour,
         shine && 'shine',
         raised && 'raised'
-    ])
+    ]);
 
     const dispatch = createEventDispatcher();
 

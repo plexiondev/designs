@@ -6,6 +6,7 @@
     import FileList from '../components/FileList.svelte';
 
     import { DownloadIcon, HeartIcon, MoreHorizontalIcon } from 'lucide-svelte';
+	import AvatarCard from '../components/AvatarCard.svelte';
 </script>
 
 <center>
@@ -93,6 +94,12 @@
                 <Avatar size="large" long src="https://plexion.s-ul.eu/Es5vvUXy" />
                 <Avatar size="medium" long src="https://plexion.s-ul.eu/Es5vvUXy" />
             </div>
+        </span>
+        <span>
+            <h4>AvatarCard</h4>
+
+            <h5>Default</h5>
+            <AvatarCard avatar="https://avatars.githubusercontent.com/u/46572320?v=4" name="plexion" href="https://github.com/plexiondev" />
         </span>
     </span>
     <span>
