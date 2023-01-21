@@ -50,7 +50,7 @@
         padding: 0 12px;
         line-height: 19px;
         border-radius: 50px;
-        font-size: 14px;
+        font-size: 12px;
         font-weight: 600;
     }
 
@@ -61,7 +61,7 @@
 
     .tag-mono {
         background-color: rgba(0,0,0,90%);
-        color: var(--text-main);
+        color: var(--c1);
     }
 
     .loader {
