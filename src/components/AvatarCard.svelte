@@ -6,6 +6,7 @@
 	import Badge from './Badge.svelte';
 	import StatusDot from './StatusDot.svelte';
     import RoleList from './RoleList.svelte';
+    import status_match from '$generated/status.json';
     import type { Role } from './types';
 
     export let roles: Role[] = [];
@@ -62,8 +63,7 @@
             <StatusDot status={status} />
         </span>
         <span class="info">
-            <!-- TODO: capitalise -->
-            <strong>{status}</strong>
+            <strong>{status_match[status]}</strong>
         </span>
     </span>
 </a>

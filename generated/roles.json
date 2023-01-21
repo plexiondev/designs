@@ -1,0 +1,10 @@
+{
+    "dev": {
+        "name": "Developer",
+        "colour": "magenta"
+    },
+    "cool": {
+        "name": "Cool person",
+        "colour": "orange"
+    }
+}

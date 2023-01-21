@@ -109,8 +109,5 @@
             width: 100%;
             display: block;
         }
-        .file .action .button {
-            margin: 0 !important;
-        }
     }
 </style>

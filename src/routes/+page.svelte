@@ -104,22 +104,14 @@
             avatar="https://avatars.githubusercontent.com/u/46572320?v=4"
             name="plexion"
             href="https://github.com/plexiondev"
-            roles={[
-                {
-                    id: 'dev'
-                }
-            ]}
+            roles={['dev','cool']}
             />
             <AvatarCard
             avatar="https://avatars.githubusercontent.com/u/46572320?v=4"
             name="plexion"
             href="https://github.com/plexiondev"
             status="offline"
-            roles={[
-                {
-                    id: 'cool'
-                }
-            ]}
+            roles={['cool']}
             />
         </span>
     </span>
