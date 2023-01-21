@@ -33,7 +33,7 @@
         background-color: var(--text-main);
         color: rgba(0,0,0,90%);
         padding: 0 12px;
-        line-height: 20px;
+        line-height: 19px;
         border-radius: 50px;
         font-size: 14px;
         font-weight: 700;
