@@ -2,6 +2,7 @@
     import Button from '../components/Button.svelte';
     import Avatar from '../components/Avatar.svelte';
 	import Badge from '../components/Badge.svelte';
+	import File from '../components/File.svelte';
 </script>
 
 <center>
@@ -87,6 +88,19 @@
                 <Badge style="tag" label="Badge" colour="orange"></Badge>
                 <Badge style="tag" label="Badge" colour="green"></Badge>
                 <Badge style="tag" label="Badge" colour="blue"></Badge>
+            </div>
+        </span>
+        <span>
+            <h4>File</h4>
+
+            <h5>Default</h5>
+            <div class="small-grid">
+                <File filename="Playtime-Tracker.zip" indicator="yeah" download="https://github.com/plex1on/playtime-tracker/releases/latest/download/playtime-tracker.zip" />
+            </div>
+
+            <h5>Primary</h5>
+            <div class="small-grid">
+                <File filename="Playtime-Tracker.zip" primary download="https://github.com/plex1on/playtime-tracker/releases/latest/download/playtime-tracker.zip" />
             </div>
         </span>
     </span>
