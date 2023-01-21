@@ -107,6 +107,15 @@
                 <Badge style="tag" label="Badge" colour="green"></Badge>
                 <Badge style="tag" label="Badge" colour="blue"></Badge>
             </div>
+
+            <h5>Loader</h5>
+            <div class="small-grid">
+                <Badge style="loader" loader="datapack"></Badge>
+                <Badge style="loader" loader="minecraft"></Badge>
+                <Badge style="loader" loader="fabric"></Badge>
+                <Badge style="loader" loader="forge"></Badge>
+                <Badge style="loader" loader="quilt"></Badge>
+            </div>
         </span>
         <span>
             <h4>File</h4>
