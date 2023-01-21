@@ -79,9 +79,6 @@
         justify-content: right;
         flex: 1;
     }
-    .file .action .button {
-        background-image: none !important;
-    }
 
     @media (max-width: 460px) {
         .file {

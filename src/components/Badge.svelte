@@ -73,11 +73,6 @@
         font-weight: 500;
         color: var(--text-main);
     }
-    .loader .icon svg {
-        width: 20px;
-        height: 20px;
-        top: -1px !important;
-    }
 
     .loader.extra .info {
         display: none;
