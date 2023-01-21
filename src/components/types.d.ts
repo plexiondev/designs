@@ -6,9 +6,13 @@ export interface Option {
 	icon?: SvelteComponentDev | string | any
 }
 
-export interface File {
+export interface FileType {
 	filename: String,
 	indicator: String,
 	primary: Boolean,
 	download: String
+}
+
+export interface Role {
+	id: string
 }

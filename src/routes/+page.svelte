@@ -100,8 +100,27 @@
             <h4>AvatarCard</h4>
 
             <h5>Default</h5>
-            <AvatarCard avatar="https://avatars.githubusercontent.com/u/46572320?v=4" name="plexion" href="https://github.com/plexiondev" />
-            <AvatarCard avatar="https://avatars.githubusercontent.com/u/46572320?v=4" name="plexion" href="https://github.com/plexiondev" status="offline" />
+            <AvatarCard
+            avatar="https://avatars.githubusercontent.com/u/46572320?v=4"
+            name="plexion"
+            href="https://github.com/plexiondev"
+            roles={[
+                {
+                    id: 'dev'
+                }
+            ]}
+            />
+            <AvatarCard
+            avatar="https://avatars.githubusercontent.com/u/46572320?v=4"
+            name="plexion"
+            href="https://github.com/plexiondev"
+            status="offline"
+            roles={[
+                {
+                    id: 'cool'
+                }
+            ]}
+            />
         </span>
     </span>
     <span>
