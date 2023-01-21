@@ -18,7 +18,7 @@
     export let name = '';
 
     // sizes
-    export let size: 'default' | 'list' | 'brick' | 'brick-min' | 'forum' = 'default';
+    export let size: 'default' | 'list' | 'brick' | 'forum' = 'default';
 
     // disabled
     export let disabled = false;
@@ -45,7 +45,7 @@
 <a class={className} {href} on:click={dispatchClick}>
     <span class="top">
         <span class="icon">
-            {#if size == 'list'}
+            {#if size == 'list' || size == 'brick'}
             <Avatar size="extra-small" src="{avatar}" shadow={false} />
             {:else}
             <Avatar size="kinda-small" src="{avatar}" shadow={false} />
@@ -117,20 +117,25 @@
         margin: -8px;
         border-radius: 13px;
     }
-    .avatar-card:not(.list) .icon {
+    .avatar-card:not(:is(.list, .brick)) .icon {
         width: 64px;
     }
 
     /* list */
-    .avatar-card.list, .avatar-card.list .base {
+    .avatar-card:is(.list, .brick), .avatar-card.list .base {
         flex-direction: row;
     }
-    .avatar-card.list .top {
+    .avatar-card:is(.list, .brick) .top {
         background-color: transparent;
         flex: 1;
     }
     .avatar-card.list .bottom .icon {
         order: 1;
         margin-right: 8px;
+    }
+
+    /* brick */
+    .avatar-card.brick :is(.bottom, .top .info .inner:nth-child(2)) {
+        display: none;
     }
 </style>
