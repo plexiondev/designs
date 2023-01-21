@@ -95,7 +95,7 @@
 <style>
     .big-grid {
         display: grid;
-        grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+        grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
         padding: 0 20px;
         gap: 20px 0;
     }
