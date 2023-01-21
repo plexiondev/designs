@@ -7,6 +7,7 @@
 
     import { DownloadIcon, HeartIcon, MoreHorizontalIcon } from 'lucide-svelte';
 	import AvatarCard from '../components/AvatarCard.svelte';
+	import StatusDot from '../components/StatusDot.svelte';
 </script>
 
 <center>
@@ -131,6 +132,17 @@
                 <Badge style="loader" loader="fabric"></Badge>
                 <Badge style="loader" loader="forge"></Badge>
                 <Badge style="loader" loader="quilt"></Badge>
+            </div>
+        </span>
+        <span>
+            <h4>StatusDot</h4>
+
+            <h5>Default (online / away / dnd / offline)</h5>
+            <div class="small-grid">
+                <StatusDot status="online" />
+                <StatusDot status="away" />
+                <StatusDot status="dnd" />
+                <StatusDot status="offline" />
             </div>
         </span>
         <span>
