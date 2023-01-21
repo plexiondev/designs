@@ -14,5 +14,9 @@
     "cool": {
         "name": "Cool person",
         "colour": "orange"
+    },
+    "supporter": {
+        "name": "Supporter",
+        "colour": "pink"
     }
 }

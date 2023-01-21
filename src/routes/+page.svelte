@@ -104,14 +104,28 @@
             avatar="https://avatars.githubusercontent.com/u/46572320?v=4"
             name="plexion"
             href="https://github.com/plexiondev"
-            roles={['dev','cool']}
+            roles={['member','dev','cool']}
             />
             <AvatarCard
-            avatar="https://avatars.githubusercontent.com/u/46572320?v=4"
+            avatar="https://a.ppy.sh/15364179?1674304618.jpeg"
             name="plexion"
-            href="https://github.com/plexiondev"
-            status="offline"
+            href="https://osu.ppy.sh/u/plexion"
+            status="away"
+            roles={['member','supporter']}
+            />
+            <AvatarCard
+            avatar="https://a.ppy.sh/1040328?1658716691.png"
+            name="smoogipoo"
+            href="https://osu.ppy.sh/u/smoogipoo"
+            status="dnd"
             roles={['member']}
+            />
+            <AvatarCard
+            avatar="https://a.ppy.sh/3103765?1570514091.jpeg"
+            name="flyte"
+            href="https://osu.ppy.sh/u/flyte"
+            status="offline"
+            roles={['member','supporter']}
             />
         </span>
     </span>

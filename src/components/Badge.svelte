@@ -45,6 +45,7 @@
     :is(.badge, .tag-mono).green   { color: var(--green);   }
     :is(.badge, .tag-mono).blue    { color: var(--blue);    }
     :is(.badge, .tag-mono).magenta { color: var(--magenta); }
+    :is(.badge, .tag-mono).pink    { color: var(--pink);    }
 
     .tag, .tag-mono {
         background-color: var(--text-main);
@@ -61,6 +62,7 @@
     .tag.green   { background-color: var(--green);   }
     .tag.blue    { background-color: var(--blue);    }
     .tag.magenta { background-color: var(--magenta); }
+    .tag.pink    { background-color: var(--pink);    }
 
     .tag-mono {
         background-color: rgba(0,0,0,90%);
