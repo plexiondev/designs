@@ -203,10 +203,15 @@
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
         padding: 0 20px;
-        gap: 20px 0;
+        gap: 20px;
         margin-bottom: 200px;
     }
-    .big-grid span {
+    .big-grid > span {
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+    }
+    .big-grid > span > span {
         display: flex;
         flex-direction: column;
         gap: 20px;

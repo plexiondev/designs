@@ -3,6 +3,7 @@
     import { classCombine } from '../utils/classCombine';
 
     import Avatar from './Avatar.svelte';
+	import Badge from './Badge.svelte';
 	import StatusDot from './StatusDot.svelte';
 
     // element
@@ -42,7 +43,14 @@
             <Avatar size="kinda-small" src="{avatar}" shadow={false} />
         </span>
         <span class="info">
-            <strong>{name}</strong>
+            <span class="base">
+                <span class="inner">
+                    <strong>{name}</strong>
+                </span>
+                <span class="inner">
+                    <Badge style="tag-mono" colour="red" label="Dev" />
+                </span>
+            </span>
         </span>
     </span>
     <span class="bottom">
@@ -79,6 +87,16 @@
         gap: var(--gap);
         padding: 8px;
         font-size: 14px;
+    }
+
+    .avatar-card .base {
+        display: flex;
+        flex-direction: column;
+        gap: calc(var(--gap) / 3);
+    }
+    .avatar-card .base .inner {
+        display: flex;
+        gap: calc(var(--gap) / 2);
     }
 
     /* avatar */
