@@ -10,3 +10,165 @@
 		<div style="display: contents">%sveltekit.body%</div>
 	</body>
 </html>
+
+<style>
+	/* fonts */
+	/* head  */     @import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100;200;300;400;500;600;700;800;900&display=swap');
+	/* main  */     @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+	/* code  */     @import url('https://plexion.dev/css/fonts/jetbrains/jetbrains.css');
+
+	:root {
+		/* padding */
+		--padding-min: 150px;
+		--padding: 300px;
+		--padding-highlight: 380px;
+		--padding-limited: 500px;
+		/* fonts */
+		--font-head: "Lexend Deca", var(--font-main);
+		--font-head-small: var(--font-main);
+		--font-main: Inter, -apple-system, BlinkMacSystemFont, Roboto, "Noto Sans JP", "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+		--font-code: "JetBrains Mono", "Courier New", consolas, monospace, var(--font-main);
+		/* header */
+		--header-attach: 70px;
+		--header-hide: -70px;
+		/* buttons */
+		--button-round: 30px;
+		--button-scale: 1.03;
+		--button-shear: -5deg;
+		--button-shear-r: 5deg;
+
+		/* underline */
+		--underline-offset: 20%;
+
+		/* panels */
+		--panel: 1280px;
+	}
+
+	/* global themes */
+	:root {
+
+		/* text */
+		--text-bg: #ffffff;
+
+		/* accents */
+		--brand-col: #003BFF;
+
+		/* backgrounds */
+		--scroll: rgba(255,255,255,0.04);
+
+		/* shadow */
+		--raise-0: 0px 3px 3px 0px rgba(0,0,0,0.1);
+		--raise-1: 0px 5px 5px 0px rgba(0,0,0,0.25);
+		--raise-2: 0px 5px 5px 0px rgba(0,0,0,0.35);
+		--raise-3: 0px 5px 6px 0px rgba(0,0,0,0.55);
+		--raise-4: 0px 5px 7px 0px rgba(0,0,0,0.65);
+		--raise-5: 0px 5px 8px 0px rgba(0,0,0,0.75);
+		--raise-6: 0px 5px 12px 0px rgba(0,0,0,0.8);
+		--raise-7: 0px 5px 15px 5px rgba(0,0,0,0.85);
+
+		/* border gradient */
+		--panel-border: 1px solid rgba(255,255,255,0.03);
+		--item-border: 1px solid rgba(255,255,255,0.04);
+		--button-border: 1px solid rgba(255,255,255,0.08);
+		--focus-button-border: 1px solid rgba(255,255,255,0.3);
+		--shine-button-border: 1px solid rgba(255,255,255,0.4);
+	}
+
+	:root, body, .re-style {
+		/* pages */
+		--home: 230;
+		--live: 0;
+		--events: 45;
+		--library: 160;
+		--socials: 38;
+		--osu: 333;
+		--accent-page: 255;
+
+		/* saturation */
+		--saturation: 1;
+
+		/* hue */
+		--base-hue: 255;
+		--error-hue: -2;
+		--archived-hue: 20;
+		--base-hue: var(--accent-page);
+		/* text */
+		--text-link: hsl(var(--base-hue),calc(var(--saturation)*100%),70%);
+		--text-head: hsla(var(--base-hue),calc(var(--saturation)*50%),95%,1);
+		--text-main: hsla(var(--base-hue),calc(var(--saturation)*45%),90%,0.8);
+		--text-alt: hsla(var(--base-hue),calc(var(--saturation)*65%),90%,0.5);
+		--text-icon: hsl(var(--base-hue),calc(var(--saturation)*30%),75%);
+		--text-raised: var(--text-head);
+		/* backgrounds */
+		--highlight: hsl(var(--base-hue),calc(var(--saturation)*10%),6%);
+		--text-select: hsla(var(--base-hue),calc(var(--saturation)*100%),70%,70%);
+
+		/* b1-6 */
+		--b1: hsl(var(--base-hue),calc(var(--saturation)*8%),40%);
+		--b2: hsl(var(--base-hue),calc(var(--saturation)*8%),30%);
+		--b3: hsl(var(--base-hue),calc(var(--saturation)*8%),25%); /* card hover */
+		--b4: hsl(var(--base-hue),calc(var(--saturation)*8%),20%); /* card */
+		--b5: hsl(var(--base-hue),calc(var(--saturation)*8%),15%); /* content */
+		--b6: hsl(var(--base-hue),calc(var(--saturation)*8%),10%); /* body */
+		/* d1-6 */
+		--d1: hsl(var(--base-hue),calc(var(--saturation)*20%),35%);
+		--d2: hsl(var(--base-hue),calc(var(--saturation)*20%),30%);
+		--d3: hsl(var(--base-hue),calc(var(--saturation)*20%),25%);
+		--d4: hsl(var(--base-hue),calc(var(--saturation)*20%),20%); /* tab bar */
+		--d5: hsl(var(--base-hue),calc(var(--saturation)*20%),15%); /* header */
+		--d6: hsl(var(--base-hue),calc(var(--saturation)*20%),10%);
+		/* l1-4 */
+		--l1: hsl(var(--base-hue),calc(var(--saturation)*65%),80%);
+		--l2: hsl(var(--base-hue),calc(var(--saturation)*65%),75%);
+		--l3: hsl(var(--base-hue),calc(var(--saturation)*65%),70%); /* link */
+		--l4: hsl(var(--base-hue),calc(var(--saturation)*65%),50%);
+		/* c1-2 */
+		--c1: hsl(var(--base-hue),calc(var(--saturation)*40%),100%);
+		--c2: hsl(var(--base-hue),calc(var(--saturation)*40%),90%); /* subcontent */
+		/* custom */
+		--b0: hsl(var(--base-hue),calc(var(--saturation)*8%),55%);
+		--l5: hsl(var(--base-hue),calc(var(--saturation)*45%),26%);
+		--ba5: hsla(var(--base-hue),calc(var(--saturation)*8%),15%,94%);
+		--ba6: hsla(var(--base-hue),calc(var(--saturation)*8%),10%,94%);
+
+		/* text shadows */
+		--bb5: hsla(var(--base-hue),calc(var(--saturation)*8%),15%,70%);
+
+		/* colours */
+		--red: hsl(-2,100%,70%);
+		--orange: hsl(45,100%,70%);
+		--green: hsl(150,100%,70%);
+		--blue: hsl(210,100%,70%);
+
+		/* accents */
+		--accent: hsl(var(--base-hue),calc(var(--saturation)*62%),38%);
+		--accent-raise: hsl(var(--base-hue),calc(var(--saturation)*62%),48%);
+		--accent-background: hsl(var(--base-hue),calc(var(--saturation)*56%),26%);
+		--dangerous: #9e1e1e;
+		--dangerous-raise: #CC3333;
+		/* targets */
+		--target: hsla(var(--base-hue),calc(var(--saturation)*100%),70%,60%);
+		--target-raise: hsla(var(--base-hue),calc(var(--saturation)*100%),70%,40%);
+	}
+
+	/* key html */
+	html {
+		scroll-behavior: smooth; /* smooth scrolling for #ids */
+		scroll-padding-top: 76px; /* height of header */
+	}
+	body {
+		background-color: var(--b6);
+		font-family: var(--font-main);
+		color: var(--text-main);
+		font-weight: 400;
+		/* parity with chromium/webkit for firefox */
+		-webkit-font-smoothing: antialiased;
+		-moz-osx-font-smoothing: grayscale;
+		overflow: overlay; /* scrollbar overlay in webkit */
+	}
+	* {
+		box-sizing: border-box;
+		scrollbar-width: thin;
+		scrollbar-color: var(--scroll);
+	}
+</style>
