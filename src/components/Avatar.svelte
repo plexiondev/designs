@@ -46,6 +46,7 @@
         background-color: var(--b4);
         object-fit: contain;
         border-radius: 5%;
+        box-shadow: var(--raise-0);
     }
 
     /* sizes */
