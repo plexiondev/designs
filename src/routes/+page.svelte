@@ -11,7 +11,7 @@
 <div class="big-grid">
     <span>
         <span>
-            <h4>Buttons</h4>
+            <h4>Button</h4>
 
             <h5>Default</h5>
             <div class="small-grid">
@@ -71,12 +71,22 @@
         <span>
             <h4>Badge</h4>
 
+            <h5>Default</h5>
             <div class="small-grid">
                 <Badge label="Badge"></Badge>
                 <Badge label="Badge" colour="red"></Badge>
                 <Badge label="Badge" colour="orange"></Badge>
                 <Badge label="Badge" colour="green"></Badge>
                 <Badge label="Badge" colour="blue"></Badge>
+            </div>
+
+            <h5>Tag</h5>
+            <div class="small-grid">
+                <Badge style="tag" label="Badge"></Badge>
+                <Badge style="tag" label="Badge" colour="red"></Badge>
+                <Badge style="tag" label="Badge" colour="orange"></Badge>
+                <Badge style="tag" label="Badge" colour="green"></Badge>
+                <Badge style="tag" label="Badge" colour="blue"></Badge>
             </div>
         </span>
     </span>
