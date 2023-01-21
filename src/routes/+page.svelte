@@ -72,8 +72,10 @@
 
             <div class="small-grid">
                 <Badge label="Badge"></Badge>
-                <Badge label="Badge" colour="green"></Badge>
                 <Badge label="Badge" colour="red"></Badge>
+                <Badge label="Badge" colour="orange"></Badge>
+                <Badge label="Badge" colour="green"></Badge>
+                <Badge label="Badge" colour="blue"></Badge>
             </div>
         </span>
     </span>

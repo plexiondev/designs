@@ -23,6 +23,8 @@
         margin-right: 5px;
     }
 
-    .badge.green { color: var(--green); }
-    .badge.red   { color: var(--red);   }
+    .badge.red    { color: var(--red);    }
+    .badge.orange { color: var(--orange); }
+    .badge.green  { color: var(--green);  }
+    .badge.blue   { color: var(--blue);   }
 </style>
