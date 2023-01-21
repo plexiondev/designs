@@ -48,6 +48,7 @@
                     <strong>{name}</strong>
                 </span>
                 <span class="inner">
+                    <!-- TODO: pass these through like the files list -->
                     <Badge style="tag-mono" colour="red" label="Dev" />
                 </span>
             </span>
