@@ -31,15 +31,14 @@
 	onMount(() => {
 		if (img && img.naturalWidth) {
 			const isPixelated = () => {
-				if (img.naturalWidth < 96 && img.naturalWidth > 0) {
-					img.style.imageRendering = 'pixelated'
-				}
+				if (img.naturalWidth < 96 && img.naturalWidth > 0)
+					img.style.imageRendering = 'pixelated';
 			}
-			if (img.naturalWidth) {
-				isPixelated()
-			} else {
-				img.onload = isPixelated
-			}
+
+			if (img.naturalWidth)
+				isPixelated();
+			else
+				img.onload = isPixelated;
 		}
 	});
 </script>
