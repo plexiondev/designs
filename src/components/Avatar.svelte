@@ -6,7 +6,7 @@
 	export let src: string;
 
     // sizes
-	export let size: 'extra-small' | 'small' | 'medium' | 'large' | 'large-2' | 'extra-large';
+	export let size: 'extra-small' | 'kinda-small' | 'small' | 'medium' | 'large' | 'large-2' | 'extra-large';
 
     // circular
 	export let circle = false;
@@ -14,12 +14,16 @@
     // manga
     export let long = false;
 
+    // shadow
+    export let shadow = true;
+
     // combine classes
 	let className: string;
 	$: className = classCombine([
 		'avatar',
 		circle && 'circular',
         long && 'long',
+        shadow && 'shadow',
 		size
 	]);
 
@@ -49,13 +53,15 @@
         height: var(--size);
         background-color: var(--b4);
         object-fit: contain;
-        border-radius: 5%;
-        box-shadow: var(--raise-0);
+        border-radius: 20%;
     }
 
     /* sizes */
     .avatar.extra-small {
         --size: 48px;
+    }
+    .avatar.kinda-small {
+        --size: 64px;
     }
     .avatar.small {
         --size: 80px;
@@ -78,10 +84,16 @@
         width: initial;
         aspect-ratio: 7 / 10; /* ref. 133x190 */
         object-fit: cover;
+        border-radius: 5%;
     }
 
     /* circular */
     .avatar.circular {
         border-radius: 50%;
+    }
+
+    /* shadow */
+    .avatar.shadow {
+        box-shadow: var(--raise-0);
     }
 </style>
