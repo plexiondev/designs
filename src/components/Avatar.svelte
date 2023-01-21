@@ -6,16 +6,20 @@
 	export let src: string;
 
     // sizes
-	export let size: 'extra-small' | 'small' | 'medium' | 'large';
+	export let size: 'extra-small' | 'small' | 'medium' | 'large' | 'large-2' | 'extra-large';
 
     // circular
 	export let circle = false;
+
+    // manga
+    export let long = false;
 
     // combine classes
 	let className: string;
 	$: className = classCombine([
 		'avatar',
 		circle && 'circular',
+        long && 'long',
 		size
 	]);
 
@@ -61,6 +65,18 @@
     }
     .avatar.large {
         --size: 148px;
+    }
+    .avatar.large-2 {
+        --size: 190px;
+    }
+    .avatar.extra-large {
+        --size: 240px;
+    }
+
+    /* manga */
+    .avatar.long {
+        width: initial;
+        aspect-ratio: 7 / 10; /* ref. 133x190 */
     }
 
     /* circular */

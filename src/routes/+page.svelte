@@ -66,6 +66,14 @@
                 <Avatar size="small" circle src="https://avatars.githubusercontent.com/u/46572320?v=4" />
                 <Avatar size="extra-small" circle src="https://avatars.githubusercontent.com/u/46572320?v=4" />
             </div>
+
+            <h5>Manga / Long</h5>
+            <div class="small-grid">
+                <Avatar size="extra-large" long src="https://plexion.s-ul.eu/Es5vvUXy" />
+                <Avatar size="large-2" long src="https://plexion.s-ul.eu/Es5vvUXy" />
+                <Avatar size="large" long src="https://plexion.s-ul.eu/Es5vvUXy" />
+                <Avatar size="medium" long src="https://plexion.s-ul.eu/Es5vvUXy" />
+            </div>
         </span>
     </span>
     <span>
