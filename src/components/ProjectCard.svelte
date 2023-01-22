@@ -26,19 +26,31 @@
 </script>
 
 <a class={className} href={href}>
+    {#if size == 'default'}
     <span class="cover">
         <img src={cover} alt="Project cover">
     </span>
+    {/if}
     <span class="info">
         <span class="icon-cont">
+            {#if size == 'default'}
             <Avatar size="small" src={icon} />
+            {:else if size == 'list'}
+            <Avatar size="medium" src={icon} />
+            {:else}
+            <Avatar size="extra-small" src={icon} shadow={false} />
+            {/if}
         </span>
         <span class="info-cont">
             <h4>{name}</h4>
+            {#if size != 'brick'}
             <p>{bio}</p>
+            {/if}
             <div class="extra">
                 <Badge style="loader" loader={loader} />
+                {#if size != 'brick'}
                 <p>{updated} (wip)</p>
+                {/if}
             </div>
         </span>
     </span>
@@ -145,5 +157,51 @@
     .tag.gsot {
         --tag-hue: #000000 !important;
         color: #FFFFFF !important;
+    }
+
+    /* list */
+    .project-card.list > .info {
+        display: flex;
+        gap: 20px;
+    }
+    .project-card.list > .info .info-cont {
+        display: flex;
+        flex-direction: column;
+        flex: 1;
+    }
+    .project-card:is(.list, .brick) .icon-cont {
+        position: static;
+        margin-bottom: initial;
+    }
+
+    /* brick */
+    .project-card.brick {
+        transform: none !important;
+        box-shadow: var(--raise-0) !important;
+        background-color: var(--b3) !important;
+        border-radius: 13px;
+    }
+    .project-card.brick .icon-cont {
+        margin: -8px;
+        height: 48px;
+        border-radius: 13px;
+    }
+    .project-card.brick > .info {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        padding: 8px;
+        min-height: initial;
+    }
+    .project-card.brick .extra {
+        padding-right: 8px;
+        align-items: center;
+    }
+    .project-card.brick > .info .info-cont {
+        display: flex;
+        width: 100%;
+    }
+    .project-card.brick h4 {
+        flex: 1;
     }
 </style>

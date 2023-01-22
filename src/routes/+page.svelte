@@ -73,11 +73,33 @@
 
             <h5>Default</h5>
             <ProjectCard
+            size="default"
+            cover="https://avatars.githubusercontent.com/u/46572320?v=4"
+            icon="https://avatars.githubusercontent.com/u/46572320?v=4"
+            name="flyte"
+            bio="This is just a sample test description to fill up the space of 2 lines (hopefullyyyyyyyyyyyyyyyy)."
+            href="https://osu.ppy.sh/u/flyte"
+            loader="datapack"
+            />
+
+            <h5>List</h5>
+            <ProjectCard
             size="list"
             cover="https://avatars.githubusercontent.com/u/46572320?v=4"
             icon="https://avatars.githubusercontent.com/u/46572320?v=4"
             name="flyte"
-            bio="This is just a sample test description to fill up the space of 2 lines."
+            bio="This is just a sample test description to fill up the space of 2 lines (hopefullyyyyyyyyyyyyyyyy)."
+            href="https://osu.ppy.sh/u/flyte"
+            loader="datapack"
+            />
+
+            <h5>Brick</h5>
+            <ProjectCard
+            size="brick"
+            cover="https://avatars.githubusercontent.com/u/46572320?v=4"
+            icon="https://avatars.githubusercontent.com/u/46572320?v=4"
+            name="flyte"
+            bio="This is just a sample test description to fill up the space of 2 lines (hopefullyyyyyyyyyyyyyyyy)."
             href="https://osu.ppy.sh/u/flyte"
             loader="datapack"
             />
