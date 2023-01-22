@@ -13,6 +13,7 @@
 	import RatingSpread from '../components/RatingSpread.svelte';
 	import InfoRow from '../components/InfoRow.svelte';
 	import InfoColumn from '../components/InfoColumn.svelte';
+	import StatisticItem from '../components/StatisticItem.svelte';
 </script>
 
 <center>
@@ -374,6 +375,21 @@
                 <InfoRow label="Label" value="Value" />
                 <InfoRow label="Label" value="Value" />
             </InfoColumn>
+        </span>
+        <span>
+            <h4>StatisticItem</h4>
+
+            <h5>Default</h5>
+            <div class="small-grid">
+                <StatisticItem value={500}><DownloadIcon /></StatisticItem>
+                <StatisticItem value={300}><HeartIcon /></StatisticItem>
+            </div>
+
+            <h5>Hover</h5>
+            <div class="small-grid">
+                <StatisticItem hover value={500}><DownloadIcon /></StatisticItem>
+                <StatisticItem hover value={300}><HeartIcon /></StatisticItem>
+            </div>
         </span>
     </span>
 </div>

@@ -13,4 +13,5 @@ export { default as ProjectCard } from './components/ProjectCard.svelte';
 export { default as ProjectCardList } from './components/ProjectCardList.svelte';
 export { default as RatingSpread } from './components/RatingSpread.svelte';
 export { default as RoleList } from './components/RoleList.svelte';
+export { default as StatisticItem } from './components/StatisticItem.svelte';
 export { default as StatusDot } from './components/StatusDot.svelte';

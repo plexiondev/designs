@@ -262,16 +262,10 @@ code {
 }
 
 /* icon */
-.button .lucide-icon {
+.lucide-icon, .loader svg {
     width: 20px;
     height: 20px;
     stroke-width: 2.5px;
-}
-.loader svg {
-    width: 20px;
-    height: 20px;
-    stroke-width: 2.25px;
-    top: -1px !important;
 }
 
 .tippy-box {
