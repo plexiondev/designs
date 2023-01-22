@@ -1,5 +1,4 @@
 <script lang="ts">
-    import { createEventDispatcher } from 'svelte';
     import { classCombine } from '../utils/classCombine';
 
     import Avatar from './Avatar.svelte';
@@ -34,15 +33,9 @@
         size,
         extra_info && 'extra-info'
     ]);
-
-    const dispatch = createEventDispatcher();
-
-    function dispatchClick() {
-        if (!disabled) dispatch('click');
-    }
 </script>
 
-<a class={className} {href} on:click={dispatchClick}>
+<a class={className} {href}>
     <span class="top">
         <span class="icon">
             {#if size == 'list' || size == 'brick'}
@@ -81,6 +74,7 @@
         display: flex;
         flex-direction: column;
         background-color: var(--b3);
+        box-shadow: var(--raise-0);
         border-radius: 13px;
         text-decoration: none;
         --gap: 20px;

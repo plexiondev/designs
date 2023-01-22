@@ -7,6 +7,7 @@
 
     import { DownloadIcon, HeartIcon, MoreHorizontalIcon } from 'lucide-svelte';
 	import AvatarCard from '../components/AvatarCard.svelte';
+    import ProjectCard from '../components/ProjectCard.svelte';
 	import StatusDot from '../components/StatusDot.svelte';
 </script>
 
@@ -66,6 +67,20 @@
                 <Button as="a" size="medium"><HeartIcon />Follow</Button>
                 <Button as="a" size="medium"><MoreHorizontalIcon /></Button>
             </div>
+        </span>
+        <span>
+            <h4>ProjectCard</h4>
+
+            <h5>Default</h5>
+            <ProjectCard
+            size="list"
+            cover="https://avatars.githubusercontent.com/u/46572320?v=4"
+            icon="https://avatars.githubusercontent.com/u/46572320?v=4"
+            name="flyte"
+            bio="This is just a sample test description to fill up the space of 2 lines."
+            href="https://osu.ppy.sh/u/flyte"
+            loader="datapack"
+            />
         </span>
     </span>
     <span>

@@ -1,4 +1,7 @@
 {
+    "unknown": {
+        "name": "Unknown"
+    },
     "datapack": {
         "name": "Data Pack"
     },
