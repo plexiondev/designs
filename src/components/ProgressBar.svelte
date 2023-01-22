@@ -13,7 +13,7 @@
 
 <style>
     .progress-bar {
-        --height: 6px;
+        --height: 8px;
         display: flex;
         background-color: var(--b6);
         width: 100%;
