@@ -1,6 +1,8 @@
 <script lang="ts">
     import loader_match from '$generated/loaders.json';
 
+    import { TrophyIcon, BoxIcon, GlobeIcon, ScrollIcon } from 'lucide-svelte';
+
     export let label = '';
     export let colour = 'default';
     export let style: 'badge' | 'tag' | 'tag-mono' | 'loader' = 'badge';
@@ -12,7 +14,15 @@
 {#if style === 'loader'}
 <div class="loader {loader}">
     <span class="icon">
-
+        {#if loader == 'datapack' || loader == 'minecraft'}
+        <BoxIcon />
+        {:else if loader == 'event'}
+        <TrophyIcon />
+        {:else if loader == 'map'}
+        <GlobeIcon />
+        {:else}
+        ?
+        {/if}
     </span>
     <span class="info">
         {loader_match[loader].name}
