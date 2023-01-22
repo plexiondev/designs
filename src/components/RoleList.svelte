@@ -15,6 +15,7 @@
     style="tag-mono"
     colour={role_match[role].colour}
     label={(acronym) ? role_match[role].acronym : role_match[role].name}
+    full_label={role_match[role].name}
     />
 {/each}
 </div>

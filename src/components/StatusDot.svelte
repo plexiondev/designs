@@ -1,8 +1,12 @@
 <script lang="ts">
     export let status: 'online' | 'away' | 'dnd' | 'offline' = 'online';
+    import status_match from '$generated/status.json';
+
+    import { tippy } from 'svelte-tippy';
+    import 'tippy.js/dist/tippy.css';
 </script>
 
-<div class="status-dot {status}"></div>
+<div class="status-dot {status}" use:tippy={{content: status_match[status], arrow: false}}></div>
 
 <style>
     .status-dot {

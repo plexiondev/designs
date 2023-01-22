@@ -273,3 +273,17 @@ code {
     stroke-width: 2.25px;
     top: -1px !important;
 }
+
+.tippy-box {
+    background-color: var(--b6) !important;
+    color: var(--text-head) !important;
+    border: 1px solid var(--b3) !important;
+    font-weight: 500 !important;
+    text-align: center !important;
+    padding: 4px 9px !important;
+    border-radius: 10px !important;
+    box-shadow: var(--raise-1) !important;
+}
+.tippy-content {
+    padding: 0 !important;
+}

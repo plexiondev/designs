@@ -2,10 +2,16 @@
     import loader_match from '$generated/loaders.json';
 
     import { TrophyIcon, BoxIcon, BrushIcon, GlobeIcon, ScrollIcon } from 'lucide-svelte';
+    import { tippy } from 'svelte-tippy';
+    import 'tippy.js/dist/tippy.css';
 
     export let label = '';
+    export let full_label = ''; // for use with acronyms
     export let colour = 'default';
     export let style: 'badge' | 'tag' | 'tag-mono' | 'loader' = 'badge';
+
+    if (full_label == '')
+        full_label = label;
 
     // loader only
     export let loader: string = '';
@@ -52,7 +58,7 @@
     </span>
 </div>
 {:else}
-<div class="{style} {colour}">
+<div class="{style} {colour}" use:tippy={{content: full_label, arrow: false}}>
     {label}
 </div>
 {/if}
