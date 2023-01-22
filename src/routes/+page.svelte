@@ -14,6 +14,7 @@
 	import InfoRow from '../components/InfoRow.svelte';
 	import InfoColumn from '../components/InfoColumn.svelte';
 	import StatisticItem from '../components/StatisticItem.svelte';
+	import Panel from '../components/Panel.svelte';
 </script>
 
 <center>
@@ -391,6 +392,20 @@
                 <StatisticItem hover value={300}><HeartIcon /></StatisticItem>
             </div>
         </span>
+        <span>
+            <h4>Panel</h4>
+            <p>Can be placed inside a <strong>PanelContainer</strong> when passing <strong>GridContainer</strong>.</p>
+
+            <h5>Default</h5>
+            <Panel>
+                <p>hi</p>
+            </Panel>
+
+            <h5>GridContainer</h5>
+            <Panel grid_container>
+                <p>hi</p>
+            </Panel>
+        </span>
     </span>
 </div>
 
@@ -410,12 +425,14 @@
     .big-grid > span {
         display: flex;
         flex-direction: column;
-        gap: 50px;
+        gap: 40px;
     }
     .big-grid > span > span {
         display: flex;
         flex-direction: column;
         gap: 20px;
+        padding-bottom: 40px;
+        border-bottom: 1px solid var(--b3);
     }
 
     .small-grid {
