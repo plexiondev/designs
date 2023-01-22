@@ -22,6 +22,11 @@ export interface Project {
 	loader: string
 }
 
+export interface Rating {
+	value: number,
+	progress?: number
+}
+
 export interface Role {
 	id: string
 }

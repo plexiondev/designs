@@ -10,6 +10,7 @@
     import ProjectCard from '../components/ProjectCard.svelte';
 	import StatusDot from '../components/StatusDot.svelte';
 	import ProgressBar from '../components/ProgressBar.svelte';
+	import RatingSpread from '../components/RatingSpread.svelte';
 </script>
 
 <center>
@@ -116,6 +117,24 @@
 
             <h5>Rating2</h5>
             <ProgressBar style="rating2" current={93} maximum={100} />
+        </span>
+        <span>
+            <h4>RatingSpread</h4>
+
+            <h5>Default</h5>
+            <RatingSpread maximum={60} ratings={[
+                { value: 2 },
+                { value: 2 },
+                { value: 2 },
+                { value: 2 },
+                { value: 4 },
+                { value: 4 },
+                { value: 10 },
+                { value: 20 },
+                { value: 35 },
+                { value: 19 }
+            ]}
+            />
         </span>
     </span>
     <span>

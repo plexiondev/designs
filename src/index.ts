@@ -9,5 +9,6 @@ export { default as FileList } from './components/FileList.svelte';
 export { default as ProgressBar } from './components/ProgressBar.svelte';
 export { default as ProjectCard } from './components/ProjectCard.svelte';
 export { default as ProjectCardList } from './components/ProjectCardList.svelte';
+export { default as RatingSpread } from './components/RatingSpread.svelte';
 export { default as RoleList } from './components/RoleList.svelte';
 export { default as StatusDot } from './components/StatusDot.svelte';
