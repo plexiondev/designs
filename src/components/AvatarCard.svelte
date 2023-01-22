@@ -57,7 +57,11 @@
                     <strong>{name}</strong>
                 </span>
                 <span class="inner">
+                    {#if size == 'list'}
+                    <RoleList acronym={true} roles={roles} />
+                    {:else if size != 'brick'}
                     <RoleList roles={roles} />
+                    {/if}
                 </span>
             </span>
         </span>

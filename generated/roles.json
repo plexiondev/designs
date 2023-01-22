@@ -1,22 +1,27 @@
 {
     "member": {
         "name": "Member",
+        "acronym": "MEM",
         "colour": "default"
     },
     "user": {
         "name": "User",
+        "acronym": "USR",
         "colour": "default"
     },
     "dev": {
         "name": "Developer",
+        "acronym": "DEV",
         "colour": "magenta"
     },
     "cool": {
         "name": "Cool person",
+        "acronym": "CLP",
         "colour": "orange"
     },
     "supporter": {
         "name": "Supporter",
+        "acronym": "SPT",
         "colour": "pink"
     }
 }

@@ -3,6 +3,9 @@
     import type { Role } from './types';
     import role_match from '$generated/roles.json';
 
+    // acronym roles
+    export let acronym = false;
+
     export let roles: Role[] = [];
 </script>
 
@@ -11,7 +14,7 @@
     <Badge
     style="tag-mono"
     colour={role_match[role].colour}
-    label={role_match[role].name}
+    label={(acronym) ? role_match[role].acronym : role_match[role].name}
     />
 {/each}
 </div>
