@@ -80,7 +80,7 @@
     .avatar-card {
         display: flex;
         flex-direction: column;
-        background-color: var(--b4);
+        background-color: var(--b3);
         border-radius: 13px;
         text-decoration: none;
         --gap: 20px;
@@ -92,7 +92,7 @@
         gap: var(--gap);
         padding: 8px;
         border-radius: 13px;
-        background-color: var(--b3);
+        background-color: var(--b4);
     }
     .avatar-card .bottom {
         display: flex;
