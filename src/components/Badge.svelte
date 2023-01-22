@@ -18,7 +18,7 @@
 </script>
 
 {#if style === 'loader'}
-<div class="loader {loader}">
+<div class="loader {loader}" use:tippy={{content: loader_match[loader].name, arrow: false}}>
     <span class="icon">
         {#if loader == 'datapack' || loader == 'minecraft'}
         <BoxIcon />
