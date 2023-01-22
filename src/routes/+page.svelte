@@ -9,6 +9,7 @@
 	import AvatarCard from '../components/AvatarCard.svelte';
     import ProjectCard from '../components/ProjectCard.svelte';
 	import StatusDot from '../components/StatusDot.svelte';
+	import ProgressBar from '../components/ProgressBar.svelte';
 </script>
 
 <center>
@@ -103,6 +104,18 @@
             href="https://osu.ppy.sh/u/flyte"
             loader="datapack"
             />
+        </span>
+        <span>
+            <h4>ProgressBar</h4>
+
+            <h5>Default</h5>
+            <ProgressBar current={75} maximum={100} />
+
+            <h5>Rating1</h5>
+            <ProgressBar style="rating1" current={85} maximum={100} />
+
+            <h5>Rating2</h5>
+            <ProgressBar style="rating2" current={93} maximum={100} />
         </span>
     </span>
     <span>
