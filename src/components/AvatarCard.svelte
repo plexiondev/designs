@@ -6,6 +6,7 @@
 	import StatusDot from './StatusDot.svelte';
     import RoleList from './RoleList.svelte';
     import status_match from '$generated/status.json';
+    import role_match from '$generated/roles.json';
     import type { Role } from './types';
 
     export let roles: Role[] = [];
@@ -24,7 +25,9 @@
 
     // bottom row
     export let extra_info = false;
-    export let status: 'online' | 'away' | 'dnd' | 'offline' = 'online';
+    export let status: '' | 'online' | 'away' | 'dnd' | 'offline' = '';
+    // alternative to status
+    export let member_type = '';
 
     // combine classes
     let className: string;
@@ -60,12 +63,18 @@
         </span>
     </span>
     <span class="bottom">
+        {#if status != ''}
         <span class="icon">
             <StatusDot status={status} />
         </span>
         <span class="info">
             <strong>{status_match[status]}</strong>
         </span>
+        {:else}
+        <span class="info member">
+            <strong>{role_match[member_type].name}</strong>
+        </span>
+        {/if}
     </span>
 </a>
 
@@ -129,6 +138,10 @@
     }
     .avatar-card.list .bottom .icon {
         order: 1;
+        margin-right: 8px;
+    }
+
+    .avatar-card:is(.list, .brick) .bottom .info.member {
         margin-right: 8px;
     }
 

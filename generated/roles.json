@@ -1,4 +1,14 @@
 {
+    "owner": {
+        "name": "Owner",
+        "acronym": "OWN",
+        "colour": "blue"
+    },
+    "contributor": {
+        "name": "Contributor",
+        "acronym": "CON",
+        "colour": "orange"
+    },
     "member": {
         "name": "Member",
         "acronym": "MEM",

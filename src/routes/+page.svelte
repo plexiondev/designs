@@ -177,6 +177,7 @@
             avatar="https://avatars.githubusercontent.com/u/46572320?v=4"
             name="plexion"
             href="https://github.com/plexiondev"
+            status="online"
             roles={['member','dev','cool']}
             />
             <AvatarCard
@@ -207,6 +208,7 @@
             avatar="https://avatars.githubusercontent.com/u/46572320?v=4"
             name="plexion"
             href="https://github.com/plexiondev"
+            status="online"
             roles={['member','dev','cool']}
             />
             <AvatarCard
@@ -240,6 +242,7 @@
             avatar="https://avatars.githubusercontent.com/u/46572320?v=4"
             name="plexion"
             href="https://github.com/plexiondev"
+            status="online"
             roles={['member','dev','cool']}
             />
             <AvatarCard
@@ -404,6 +407,37 @@
             <h5>GridContainer</h5>
             <Panel grid_container>
                 <p>hi</p>
+            </Panel>
+            <Panel grid_container>
+                <h5 class="text-17">Members</h5>
+                <AvatarCard
+                size="list"
+                avatar="https://avatars.githubusercontent.com/u/46572320?v=4"
+                name="plexion"
+                href="https://github.com/plexiondev"
+                member_type="owner"
+                />
+                <AvatarCard
+                size="list"
+                avatar="https://a.ppy.sh/15364179?1674304618.jpeg"
+                name="plexion"
+                href="https://osu.ppy.sh/u/plexion"
+                member_type="owner"
+                />
+                <AvatarCard
+                size="list"
+                avatar="https://a.ppy.sh/1040328?1658716691.png"
+                name="smoogipoo"
+                href="https://osu.ppy.sh/u/smoogipoo"
+                member_type="contributor"
+                />
+                <AvatarCard
+                size="list"
+                avatar="https://a.ppy.sh/3103765?1570514091.jpeg"
+                name="flyte"
+                href="https://osu.ppy.sh/u/flyte"
+                member_type="contributor"
+                />
             </Panel>
         </span>
     </span>
