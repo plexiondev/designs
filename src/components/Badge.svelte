@@ -1,7 +1,7 @@
 <script lang="ts">
     import loader_match from '$generated/loaders.json';
 
-    import { TrophyIcon, BoxIcon, GlobeIcon, ScrollIcon } from 'lucide-svelte';
+    import { TrophyIcon, BoxIcon, BrushIcon, GlobeIcon, ScrollIcon } from 'lucide-svelte';
 
     export let label = '';
     export let colour = 'default';
@@ -18,6 +18,8 @@
         <BoxIcon />
         {:else if loader == 'event'}
         <TrophyIcon />
+        {:else if loader == 'resourcepack'}
+        <BrushIcon />
         {:else if loader == 'map'}
         <GlobeIcon />
         {:else if loader == 'fabric'}
