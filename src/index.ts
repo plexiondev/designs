@@ -6,6 +6,8 @@ export { default as Badge } from './components/Badge.svelte';
 export { default as Button } from './components/Button.svelte';
 export { default as File } from './components/File.svelte';
 export { default as FileList } from './components/FileList.svelte';
+export { default as InfoColumn } from './components/InfoColumn.svelte';
+export { default as InfoRow } from './components/InfoRow.svelte';
 export { default as ProgressBar } from './components/ProgressBar.svelte';
 export { default as ProjectCard } from './components/ProjectCard.svelte';
 export { default as ProjectCardList } from './components/ProjectCardList.svelte';

@@ -11,6 +11,8 @@
 	import StatusDot from '../components/StatusDot.svelte';
 	import ProgressBar from '../components/ProgressBar.svelte';
 	import RatingSpread from '../components/RatingSpread.svelte';
+	import InfoRow from '../components/InfoRow.svelte';
+	import InfoColumn from '../components/InfoColumn.svelte';
 </script>
 
 <center>
@@ -356,6 +358,22 @@
                 ]}
                 />
             </div>
+        </span>
+        <span>
+            <h4>InfoRow</h4>
+
+            <h5>Default</h5>
+            <InfoRow label="Label" value="Value" />
+        </span>
+        <span>
+            <h4>InfoColumn</h4>
+
+            <h5>Default</h5>
+            <InfoColumn>
+                <InfoRow label="Label" value="Value" />
+                <InfoRow label="Label" value="Value" />
+                <InfoRow label="Label" value="Value" />
+            </InfoColumn>
         </span>
     </span>
 </div>
