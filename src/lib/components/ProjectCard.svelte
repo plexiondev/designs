@@ -81,7 +81,7 @@
         overflow: hidden;
         display: flex;
         align-items: center;
-        justify-items: center;
+        justify-content: center;
         background: var(--b4);
         max-height: 190px;
         border-radius: 10px;
