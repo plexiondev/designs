@@ -1,7 +1,7 @@
 {
 	"name": "designs",
-	"version": "0.0.1",
-	"private": true,
+	"version": "2023.0122",
+	"private": false,
 	"scripts": {
 		"dev": "vite dev",
 		"build": "vite build",
