@@ -1,5 +1,5 @@
 <script lang="ts">
-    import { classCombine } from '../utils/classCombine';
+    import { classCombine } from '../../utils/classCombine';
     import Button from './Button.svelte';
 
     import { FileIcon } from 'lucide-svelte';
