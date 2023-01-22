@@ -21,6 +21,8 @@
         align-items: end;
         gap: 2px;
         height: 60px;
+        /* TODO: fix gradient */
+        mask-image: linear-gradient(90deg, var(--red) 0%, var(--green) 100%);
     }
     .rating-spread .rating {
         display: block;
