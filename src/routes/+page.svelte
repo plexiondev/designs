@@ -334,9 +334,10 @@
     }
 
     .big-grid {
+        background-color: var(--b5);
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-        padding: 0 20px;
+        padding: 20px;
         gap: 20px;
         margin-bottom: 200px;
     }
