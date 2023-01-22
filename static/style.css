@@ -1,0 +1,275 @@
+/* fonts */
+/* head  */     @import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100;200;300;400;500;600;700;800;900&display=swap');
+/* main  */     @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+/* code  */     @import url('https://plexion.dev/css/fonts/jetbrains/jetbrains.css');
+
+:root {
+    /* padding */
+    --padding-min: 150px;
+    --padding: 300px;
+    --padding-highlight: 380px;
+    --padding-limited: 500px;
+    /* fonts */
+    --font-head: "Lexend Deca", var(--font-main);
+    --font-head-small: var(--font-main);
+    --font-main: Inter, -apple-system, BlinkMacSystemFont, Roboto, "Noto Sans JP", "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    --font-code: "JetBrains Mono", "Courier New", consolas, monospace, var(--font-main);
+    /* header */
+    --header-attach: 70px;
+    --header-hide: -70px;
+    /* buttons */
+    --button-round: 30px;
+    --button-scale: 1.03;
+    --button-shear: -5deg;
+    --button-shear-r: 5deg;
+
+    /* underline */
+    --underline-offset: 20%;
+
+    /* panels */
+    --panel: 1280px;
+}
+
+/* global themes */
+:root {
+
+    /* text */
+    --text-bg: #ffffff;
+
+    /* accents */
+    --brand-col: #003BFF;
+
+    /* backgrounds */
+    --scroll: rgba(255,255,255,0.04);
+
+    /* shadow */
+    --raise-0: 0px 3px 3px 0px rgba(0,0,0,0.1);
+    --raise-1: 0px 5px 5px 0px rgba(0,0,0,0.25);
+    --raise-2: 0px 5px 5px 0px rgba(0,0,0,0.35);
+    --raise-3: 0px 5px 6px 0px rgba(0,0,0,0.55);
+    --raise-4: 0px 5px 7px 0px rgba(0,0,0,0.65);
+    --raise-5: 0px 5px 8px 0px rgba(0,0,0,0.75);
+    --raise-6: 0px 5px 12px 0px rgba(0,0,0,0.8);
+    --raise-7: 0px 5px 15px 5px rgba(0,0,0,0.85);
+
+    /* border gradient */
+    --panel-border: 1px solid rgba(255,255,255,0.03);
+    --item-border: 1px solid rgba(255,255,255,0.04);
+    --button-border: 1px solid rgba(255,255,255,0.08);
+    --focus-button-border: 1px solid rgba(255,255,255,0.3);
+    --shine-button-border: 1px solid rgba(255,255,255,0.4);
+}
+
+:root, body, .re-style {
+    /* pages */
+    --home: 230;
+    --live: 0;
+    --events: 45;
+    --library: 160;
+    --socials: 38;
+    --osu: 333;
+    --accent-page: 255;
+
+    /* saturation */
+    --saturation: 1;
+
+    /* hue */
+    --base-hue: 255;
+    --error-hue: -2;
+    --archived-hue: 20;
+    --base-hue: var(--accent-page);
+    /* text */
+    --text-link: hsl(var(--base-hue),calc(var(--saturation)*100%),70%);
+    --text-head: hsla(var(--base-hue),calc(var(--saturation)*50%),95%,1);
+    --text-main: hsla(var(--base-hue),calc(var(--saturation)*45%),90%,0.8);
+    --text-alt: hsla(var(--base-hue),calc(var(--saturation)*65%),90%,0.5);
+    --text-icon: hsl(var(--base-hue),calc(var(--saturation)*30%),75%);
+    --text-raised: var(--text-head);
+    /* backgrounds */
+    --highlight: hsl(var(--base-hue),calc(var(--saturation)*10%),6%);
+    --text-select: hsla(var(--base-hue),calc(var(--saturation)*100%),70%,70%);
+
+    /* b1-6 */
+    --b1: hsl(var(--base-hue),calc(var(--saturation)*8%),40%);
+    --b2: hsl(var(--base-hue),calc(var(--saturation)*8%),30%);
+    --b3: hsl(var(--base-hue),calc(var(--saturation)*8%),25%); /* card hover */
+    --b4: hsl(var(--base-hue),calc(var(--saturation)*8%),20%); /* card */
+    --b5: hsl(var(--base-hue),calc(var(--saturation)*8%),15%); /* content */
+    --b6: hsl(var(--base-hue),calc(var(--saturation)*8%),10%); /* body */
+    /* d1-6 */
+    --d1: hsl(var(--base-hue),calc(var(--saturation)*20%),35%);
+    --d2: hsl(var(--base-hue),calc(var(--saturation)*20%),30%);
+    --d3: hsl(var(--base-hue),calc(var(--saturation)*20%),25%);
+    --d4: hsl(var(--base-hue),calc(var(--saturation)*20%),20%); /* tab bar */
+    --d5: hsl(var(--base-hue),calc(var(--saturation)*20%),15%); /* header */
+    --d6: hsl(var(--base-hue),calc(var(--saturation)*20%),10%);
+    /* l1-4 */
+    --l1: hsl(var(--base-hue),calc(var(--saturation)*65%),80%);
+    --l2: hsl(var(--base-hue),calc(var(--saturation)*65%),75%);
+    --l3: hsl(var(--base-hue),calc(var(--saturation)*65%),70%); /* link */
+    --l4: hsl(var(--base-hue),calc(var(--saturation)*65%),50%);
+    /* c1-2 */
+    --c1: hsl(var(--base-hue),calc(var(--saturation)*40%),100%);
+    --c2: hsl(var(--base-hue),calc(var(--saturation)*40%),90%); /* subcontent */
+    /* custom */
+    --b0: hsl(var(--base-hue),calc(var(--saturation)*8%),55%);
+    --l5: hsl(var(--base-hue),calc(var(--saturation)*45%),26%);
+    --ba5: hsla(var(--base-hue),calc(var(--saturation)*8%),15%,94%);
+    --ba6: hsla(var(--base-hue),calc(var(--saturation)*8%),10%,94%);
+
+    /* text shadows */
+    --bb5: hsla(var(--base-hue),calc(var(--saturation)*8%),15%,70%);
+
+    /* colours */
+    --red: hsl(-2,100%,70%);
+    --orange: hsl(45,100%,70%);
+    --green: hsl(150,100%,70%);
+    --blue: hsl(210,100%,70%);
+    --magenta: hsl(280,100%,70%);
+    --pink: hsl(333,100%,70%);
+
+    /* accents */
+    --accent: hsl(var(--base-hue),calc(var(--saturation)*62%),38%);
+    --accent-raise: hsl(var(--base-hue),calc(var(--saturation)*62%),48%);
+    --accent-background: hsl(var(--base-hue),calc(var(--saturation)*56%),26%);
+    --dangerous: #9e1e1e;
+    --dangerous-raise: #CC3333;
+    /* targets */
+    --target: hsla(var(--base-hue),calc(var(--saturation)*100%),70%,60%);
+    --target-raise: hsla(var(--base-hue),calc(var(--saturation)*100%),70%,40%);
+}
+
+/* key html */
+html {
+    scroll-behavior: smooth; /* smooth scrolling for #ids */
+    scroll-padding-top: 76px; /* height of header */
+}
+body {
+    background-color: var(--b6);
+    font-family: var(--font-main);
+    color: var(--text-main);
+    font-weight: 400;
+    /* parity with chromium/webkit for firefox */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    overflow: overlay; /* scrollbar overlay in webkit */
+}
+* {
+    box-sizing: border-box;
+    scrollbar-width: thin;
+    scrollbar-color: var(--scroll);
+}
+
+p {
+    padding: 5px 0;
+    line-height: 20px;
+    color: var(--text-main);
+}
+
+/* headers */
+h1, h2, h3, h4, h5, h6 {
+    color: var(--text-head);
+    font-weight: 600;
+}
+h1, h2, h3 {
+    font-family: var(--font-head);
+    font-weight: 600;
+}
+/* h1, attention-drawing */
+h1, .act-h1 {
+    font-size: 48px;
+    padding: 8px 0;
+    line-height: 60px;
+    --brand: -4px;
+    --brand2: 4px;
+}
+/* h2, less-important */
+h2, .act-h2, .md-body h1 {
+    --fixed: 22px !important;
+    font-size: 36px;
+    padding: 6px 0;
+}
+/* h3, smaller */
+h3, .act-h3, .md-body h2 {
+    font-size: 26px;
+    padding: 3px 0;
+}
+/* h4, slightly bigger than usual */
+h4, .act-h4, .md-body h3, .md-body h5 {
+    font-size: 18px;
+    line-height: 22px;
+}
+/* h5, aka. bold text */
+h5, .act-h5, .md-body :is(h4, h5) {
+    font-size: 16px;
+}
+
+/* link anchors */
+a {
+    color: var(--l3);
+    text-decoration: underline;
+    text-underline-offset: var(--underline-offset);
+    transition: color 0.2s, transform 0.2s;
+}
+a:is(:hover, :focus) {
+    color: var(--text-head);
+}
+a[role="button"], [onclick] {
+    cursor: pointer;
+}
+a.hide:not(:is(:hover, :focus)) {
+    text-decoration: none;
+}
+
+a.hidden:not(.show-underline) {
+    text-decoration: none;
+}
+a.hidden:not(:is(:hover,:focus)) {
+    color: inherit;
+}
+
+/* italics */
+em, i.i, .md-body i {
+    font-style: italic;
+}
+/* bold/strong */
+strong, b {
+    font-weight: 600;
+    color: var(--text-head);
+}
+
+/* code blocks */
+code, kbd, pre, samp {
+    font-family: var(--font-code);
+    background-color: var(--b5);
+    padding: 1px 4px;
+    border-radius: 3px;
+    white-space: nowrap;
+    image-rendering: auto;
+}
+pre {
+    padding: 4px;
+    margin: 5px 0;
+}
+pre, pre code {
+    white-space: pre;
+}
+code {
+    font-size: 14px;
+}
+.code-font {
+    font-family: var(--font-code);
+}
+
+/* icon */
+.button .lucide-icon {
+    width: 20px;
+    height: 20px;
+    stroke-width: 2.5px;
+}
+.loader svg {
+    width: 20px;
+    height: 20px;
+    stroke-width: 2.25px;
+    top: -1px !important;
+}
