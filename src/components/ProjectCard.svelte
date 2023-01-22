@@ -12,7 +12,7 @@
     export let name = '';
     export let bio = '';
     export let updated = '';
-    export let loader: 'unknown' | 'event' | 'datapack' | 'resourcepack' | 'map' = 'unknown';
+    export let loader: string | 'unknown' | 'event' | 'datapack' | 'resourcepack' | 'map' = 'unknown';
 
     // sizes
     export let size: 'default' | 'brick' | 'list' = 'default';

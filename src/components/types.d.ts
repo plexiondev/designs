@@ -7,10 +7,19 @@ export interface Option {
 }
 
 export interface FileType {
-	filename: String,
-	indicator: String,
-	primary: Boolean,
-	download: String
+	filename: string,
+	indicator: string,
+	primary: boolean,
+	download: string
+}
+
+export interface Project {
+	cover: string,
+	icon: string,
+	name: string,
+	bio: string,
+	href: string,
+	loader: string
 }
 
 export interface Role {
