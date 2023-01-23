@@ -451,7 +451,7 @@
     .big-grid {
         background-color: var(--b5);
         display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+        grid-template-columns: repeat(auto-fit, minmax(370px, 1fr));
         padding: 20px;
         gap: 20px;
         margin-bottom: 200px;
@@ -473,5 +473,6 @@
         display: flex;
         align-items: center;
         gap: 10px;
+        flex-wrap: wrap;
     }
 </style>
