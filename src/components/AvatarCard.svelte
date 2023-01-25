@@ -19,9 +19,6 @@
     // sizes
     export let size: 'default' | 'list' | 'brick' | 'forum' = 'default';
 
-    // disabled
-    export let disabled = false;
-
     // bottom row
     export let extra_info = false;
     export let status: '' | 'online' | 'away' | 'dnd' | 'offline' = '';
