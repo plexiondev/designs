@@ -52,7 +52,7 @@
         height: var(--size);
         background-color: var(--b4);
         object-fit: contain;
-        border-radius: 20%;
+        border-radius: 30%;
     }
 
     /* sizes */
