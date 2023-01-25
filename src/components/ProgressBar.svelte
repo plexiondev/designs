@@ -3,6 +3,8 @@
     export let current = 75;
 
     export let title = 'Value'; // tooltip title
+    // TODO: add description?
+    // TODO: add large gap between value and count (like plexion.dev)
 
     import { tippy } from 'svelte-tippy';
     import 'tippy.js/dist/tippy.css';
