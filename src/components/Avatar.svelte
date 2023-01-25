@@ -52,15 +52,17 @@
         height: var(--size);
         background-color: var(--b4);
         object-fit: contain;
-        border-radius: 30%;
+        border-radius: 33%;
     }
 
     /* sizes */
     .avatar.extra-small {
         --size: 48px;
+        border-radius: 20%; /* avatarcard parity */
     }
     .avatar.kinda-small {
         --size: 64px;
+        border-radius: 20%; /* avatarcard parity */
     }
     .avatar.small {
         --size: 80px;
