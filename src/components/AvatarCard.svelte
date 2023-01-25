@@ -1,8 +1,7 @@
 <script lang="ts">
-    import { classCombine } from '../../utils/classCombine';
+    import { classCombine } from '../utils/classCombine';
 
     import Avatar from './Avatar.svelte';
-	import Badge from './Badge.svelte';
 	import StatusDot from './StatusDot.svelte';
     import RoleList from './RoleList.svelte';
     import status_match from '$generated/status.json';

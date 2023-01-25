@@ -1,6 +1,6 @@
 <script lang="ts">
 	import { onMount } from 'svelte';
-	import { classCombine } from '../../utils/classCombine';
+	import { classCombine } from '../utils/classCombine';
 
     // image source
 	export let src: string;

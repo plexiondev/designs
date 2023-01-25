@@ -1,6 +1,6 @@
 <script lang="ts">
     import { createEventDispatcher } from 'svelte';
-    import { classCombine } from '../../utils/classCombine';
+    import { classCombine } from '../utils/classCombine';
 
     // element
     export let as: 'button' | 'a' | 'summary' | 'input' | 'file' = 'button';
