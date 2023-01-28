@@ -25,10 +25,11 @@ export default {
     ],
     plugins: [
         external(),
-        resolve(),
+        resolve({extensions: ['.js', '.ts', '.svelte']}),
         typescript({ tsconfig: './tsconfig.json' }),
         commonjs(),
         postcss(),
+        css(),
         terser()
     ]
 }

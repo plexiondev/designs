@@ -1,20 +1,20 @@
 <script lang="ts">
-    import Button from '../components/Button.svelte';
-    import Avatar from '../components/Avatar.svelte';
-	import Badge from '../components/Badge.svelte';
-	import File from '../components/File.svelte';
-    import FileList from '../components/FileList.svelte';
+    import Button from '../lib/components/Button.svelte';
+    import Avatar from '../lib/components/Avatar.svelte';
+	import Badge from '../lib/components/Badge.svelte';
+	import File from '../lib/components/File.svelte';
+    import FileList from '../lib/components/FileList.svelte';
 
     import { DownloadIcon, HeartIcon, MoreHorizontalIcon } from 'lucide-svelte';
-	import AvatarCard from '../components/AvatarCard.svelte';
-    import ProjectCard from '../components/ProjectCard.svelte';
-	import StatusDot from '../components/StatusDot.svelte';
-	import ProgressBar from '../components/ProgressBar.svelte';
-	import RatingSpread from '../components/RatingSpread.svelte';
-	import InfoRow from '../components/InfoRow.svelte';
-	import InfoColumn from '../components/InfoColumn.svelte';
-	import StatisticItem from '../components/StatisticItem.svelte';
-	import Panel from '../components/Panel.svelte';
+	import AvatarCard from '../lib/components/AvatarCard.svelte';
+    import ProjectCard from '../lib/components/ProjectCard.svelte';
+	import StatusDot from '../lib/components/StatusDot.svelte';
+	import ProgressBar from '../lib/components/ProgressBar.svelte';
+	import RatingSpread from '../lib/components/RatingSpread.svelte';
+	import InfoRow from '../lib/components/InfoRow.svelte';
+	import InfoColumn from '../lib/components/InfoColumn.svelte';
+	import StatisticItem from '../lib/components/StatisticItem.svelte';
+	import Panel from '../lib/components/Panel.svelte';
 </script>
 
 <center>
